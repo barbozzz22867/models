@@ -12,4 +12,5 @@ public sealed class AnalysisReport
     public long ProcessingTimeMs { get; init; }
     public List<FileAnalysisResult> Results { get; init; } = [];
     public List<FileProcessingError> Errors { get; init; } = [];
+    public Dictionary<int, int> WorkerStatistics { get; init; } = new();
 }
